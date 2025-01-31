@@ -2,6 +2,7 @@
     --pink: #f14e95;
     --pink-muted: #fdf4f8;
     --pink-hover: #d84686;
+    --pink-light: #fcdbe9;
     --white: #fff;
     --grey: #ccc;
     --light-grey: #d4d4d4;
@@ -17,12 +18,12 @@ html{
 
 * {
     font-family: 'Work Sans', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: var(--pink) var(--pink-light);
 }
 
 body.transition{
     animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -149,3 +150,48 @@ body.transition{
     color: var(--white);
 }
 
+.text-pink{
+    color: var(--pink);
+}
+
+.pembuka-section{
+    padding-top: 75px;
+}
+
+.section-title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h3{
+    margin: 15px 0 0 0;
+    font-size: 32px;
+}
+
+.section-title p{
+    margin: 15px auto 0 auto;
+}
+
+.section-bg{
+    background-color: var(--pink-muted);
+}
+
+#content-section{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--pink-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--pink);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--pink-hover);
+}

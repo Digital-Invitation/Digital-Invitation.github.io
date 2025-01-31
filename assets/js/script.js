@@ -1,3 +1,7 @@
+// AOS
+AOS.init()
+
+
 // MUSIC
 var tempMusic = ''
 music = document.querySelector('.music')
